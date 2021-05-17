@@ -14,6 +14,7 @@ Reset_Handler
 TOP	CMP R2, #36
 	BEQ EXI
 	LDR R4, [R0, R2]
+	MOV R7, R2
 	MOV R3, R2
 	ADD R3, #4
 UP	CMP R3, #40
