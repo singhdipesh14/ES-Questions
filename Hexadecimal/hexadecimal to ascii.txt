@@ -9,7 +9,7 @@ __Vectors
 	EXPORT Reset_Handler
 Reset_Handler
 	LDR R0, =DST
-	MOV R1, #0x12A
+	MOV R1, #0x12
 	MOV R2, #0
 	MOV R3, #10
 UP	CMP R1, R3

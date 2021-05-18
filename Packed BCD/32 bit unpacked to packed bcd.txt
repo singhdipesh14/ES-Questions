@@ -1,4 +1,4 @@
-AREA RESET, DATA, READONLY
+	AREA RESET, DATA, READONLY
 	EXPORT __Vectors
 
 __Vectors
@@ -9,14 +9,14 @@ __Vectors
 	ENTRY
 	EXPORT Reset_Handler
 Reset_Handler
-	LDR R0, =Ox01020304
-  LDR R1, =Ox0000000F
-  MOV R4, #4
+	LDR R0, =0x01020304
+	LDR R1, =0x0000000F
+	MOV R4, #4
 UP  AND R2, R0, R1
-  LSL R1, #4
-  LSR R0, #4
-  ORR R3, R2
-  SUBS R4, #1
-  BNE UP
+  	LSL R1, #4
+  	LSR R0, #4
+	ORR R3, R2
+  	SUBS R4, #1
+  	BNE UP
 STOP B STOP
 	END
