@@ -8,7 +8,7 @@ __Vectors
 	ENTRY
 	EXPORT Reset_Handler
 Reset_Handler
-	MOV R0, #0x1234
+	MOV R0, #0x12345678
 	MOV R1, #0
 	MOV R2, #0xF
 	MOV R4, #1
