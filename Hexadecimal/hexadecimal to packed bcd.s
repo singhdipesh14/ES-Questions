@@ -8,7 +8,7 @@ __Vectors
 	ENTRY
 	EXPORT Reset_Handler
 Reset_Handler
-	MOV R0, #0xABC
+	MOV R0, #0xABCD
 	MOV R1, #0
 	MOV R2, #0
 	MOV R3, #0
@@ -24,6 +24,8 @@ STO	LSL R0, R2
 	MOV R1, #0
 	CMP R0, #0
 	BHI UP
+	LDR R0, =DST
+	STR R3, [R0]
 STOP 	B STOP
 	AREA MYDATA, DATA, READWRITE
 DST DCD 0x0
